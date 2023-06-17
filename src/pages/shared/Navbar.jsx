@@ -35,7 +35,7 @@ const Navbar = () => {
                                     <li className="font-semibold text-[15px]" key={path}>
                                         <NavLink
                                             to={path}
-                                            className={({ isActive }) => isActive ? "text-green-500" : ""}
+                                            className={({ isActive }) => isActive ? "text-success" : ""}
                                         >
                                             {title}
                                         </NavLink>
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <li className="font-semibold text-[15px]" key={path}>
                                     <NavLink
                                         to={path}
-                                        className={({ isActive }) => isActive ? "text-green-500" : ""}
+                                        className={({ isActive }) => isActive ? "text-success" : ""}
                                     >
                                         {title}
                                     </NavLink>
