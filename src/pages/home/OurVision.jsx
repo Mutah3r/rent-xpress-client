@@ -12,7 +12,7 @@ const OurVision = () => {
     }
 
     return (
-        <section className="p-4 flex flex-col-reverse justify-center items-center lg:grid lg:grid-cols-2 gap-6">
+        <section className="py-4 flex flex-col-reverse justify-center items-center lg:grid lg:grid-cols-2 gap-6">
             <div>
                 <img className="w-full h-auto" src={happyClientImg} alt="Happy client image" />
             </div>
