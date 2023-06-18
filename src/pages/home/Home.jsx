@@ -1,3 +1,4 @@
+import CarsMarquee from "./CarsMarquee";
 import FeaturedCars from "./FeaturedCars";
 import FeaturedReviews from "./FeaturedReviews";
 import Hero from "./Hero";
@@ -14,6 +15,7 @@ const Home = () => {
             <OurServices />
             <FeaturedReviews />
             <Stats />
+            <CarsMarquee />
         </div>
     );
 };
