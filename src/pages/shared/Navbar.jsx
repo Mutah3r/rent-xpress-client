@@ -22,7 +22,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="p-3 navbar bg-white">
+        <nav className="p-3 navbar bg-white max-w-[1200px] mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                                     <li className="font-semibold text-[15px]" key={path}>
                                         <NavLink
                                             to={path}
-                                            className={({ isActive }) => isActive ? "text-success" : ""}
+                                            className={({ isActive }) => isActive ? "text-[#78CA5C]" : ""}
                                         >
                                             {title}
                                         </NavLink>
@@ -45,7 +45,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <h1 className="text-[32px] font-semibold"><Link to="/">RentXpress</Link></h1>
+                <h1 className="text-[32px] text-[#78CA5C] title-font font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#6ad347] to-[#78CA5C]"><Link to="/">RentXpress</Link></h1>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <li className="font-semibold text-[15px]" key={path}>
                                     <NavLink
                                         to={path}
-                                        className={({ isActive }) => isActive ? "text-success" : ""}
+                                        className={({ isActive }) => isActive ? "text-[#78CA5C]" : ""}
                                     >
                                         {title}
                                     </NavLink>
@@ -67,7 +67,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="avatar">
-                    <div className="w-[56px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-0">
+                    <div className="w-[56px] rounded-full ring ring-[#78CA5C] ring-offset-base-100 ring-offset-0">
                         <img src="https://i.pinimg.com/474x/05/c3/59/05c359cd010df3e7f1ea3cb6f6f54fad.jpg" />
                     </div>
                 </div>

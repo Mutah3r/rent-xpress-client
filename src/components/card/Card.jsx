@@ -24,7 +24,7 @@ const Card = () => {
                         <h2 className="font-bold text-[26px]">$265</h2>
                     </div>
                     <div>
-                        <button className="btn btn-success text-white title-font">Rent Now</button>
+                        <button className="button-primary">Rent Now</button>
                     </div>
                 </div>
             </div>
