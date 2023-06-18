@@ -19,14 +19,14 @@ const OurServices = () => {
                     <div className="bg-[#78CA5C] text-white text-[32px] p-6 inline-block rounded-lg">
                         <FaRoad />
                     </div>
-                    <h3 className="mt-2 text-[20px] title-text font-semibold text-[#3F4254]">First Class Services</h3>
+                    <h3 className="mt-2 text-[20px] title-text font-semibold text-[#3F4254]">24/7 road assistance</h3>
                     <p className="mt-1 text-[#727272]">Reliable support when you need it most, keeping you on the move with confidence and peace of mind.</p>
                 </div>
                 <div>
                     <div className="bg-[#78CA5C] text-white text-[32px] p-6 inline-block rounded-lg">
                         <FaTaxi />
                     </div>
-                    <h3 className="mt-2 text-[20px] title-text font-semibold text-[#3F4254]">First Class Services</h3>
+                    <h3 className="mt-2 text-[20px] title-text font-semibold text-[#3F4254]">Free Pick-Up & Drop-Off</h3>
                     <p className="mt-1 text-[#727272]">Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental experience.</p>
                 </div>
             </div>
