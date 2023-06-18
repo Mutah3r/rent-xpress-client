@@ -1,0 +1,22 @@
+.featured-review {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.featured-review:hover {
+    transform: scale(1.03);
+}
+
+.featured-review-1 {
+    background: url('../../assets/images/featured-review-img-01.jpg'), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.8));
+}
+
+.featured-review-2 {
+    background: url('../../assets/images/featured-review-img-02.jpg'), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.8));
+}
+
+.featured-review-3 {
+    background: url('../../assets/images/featured-review-img-03.jpg'), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.8));}

@@ -3,7 +3,7 @@ import { BsTrophyFill } from "react-icons/bs";
 
 const OurServices = () => {
     return (
-        <section className="flex flex-col lg:flex-row gap-8 lg:gap-4 p-4 my-12">
+        <section className="flex flex-col lg:flex-row gap-8 lg:gap-4 p-4 my-12 max-w-[1200px] mx-auto">
             <div>
                 <h1 className="text-center lg:text-left text-[42px] title-text font-semibold text-[#3F4254]">Explore the world with comfortable car</h1>
             </div>
