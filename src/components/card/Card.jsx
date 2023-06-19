@@ -5,7 +5,7 @@ const Card = ({ carInfo }) => {
     const { seats, luggage, doors, body } = specifications;
 
     return (
-        <div className="border p-3 rounded-lg">
+        <div className="border border-gray-300 p-3 rounded-lg">
             <div className="rounded-lg h-[250px] overflow-hidden">
                 <img className="rounded-lg w-full h-full transition-all duration-[0.5s] hover:scale-[1.05] cursor-pointer" src={images[0]} alt="" />
             </div>

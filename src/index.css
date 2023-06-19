@@ -13,3 +13,15 @@
 .button-primary {
   @apply btn bg-[#78CA5C] border-none hover:bg-[#67b04f] text-white title-font;
 }
+
+.cars-page {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+@media only screen and (max-width: 900px) {
+  .cars-page {
+    background-color: white;
+    grid-template-columns: 1fr;
+  }
+}
