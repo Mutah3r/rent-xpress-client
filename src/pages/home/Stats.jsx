@@ -7,7 +7,7 @@ const Stats = () => {
                 <div className="bg-white text-center p-6">
                     <h2 className="text-[40px] title-font text-[#78CA5C] font-semibold">
                         <CountUp
-                            start={0}
+                            // start={0}
                             end={15425}
                             duration={5}
                             enableScrollSpy={true}
@@ -20,7 +20,7 @@ const Stats = () => {
                 <div className="bg-white text-center p-6">
                     <h2 className="text-[40px] title-font text-[#78CA5C] font-semibold">
                         <CountUp
-                            start={0}
+                            // start={0}
                             end={8745}
                             duration={5}
                             enableScrollSpy={true}
@@ -33,7 +33,7 @@ const Stats = () => {
                 <div className="bg-white text-center p-6">
                     <h2 className="text-[40px] title-font text-[#78CA5C] font-semibold">
                         <CountUp
-                            start={0}
+                            // start={0}
                             end={235}
                             duration={5}
                             enableScrollSpy={true}
@@ -46,7 +46,7 @@ const Stats = () => {
                 <div className="bg-white text-center p-6">
                     <h2 className="text-[40px] title-font text-[#78CA5C] font-semibold">
                         <CountUp
-                            start={0}
+                            // start={0}
                             end={15}
                             duration={5}
                             enableScrollSpy={true}
