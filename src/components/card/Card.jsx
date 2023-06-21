@@ -28,7 +28,7 @@ const Card = ({ carInfo }) => {
                         <h2 className="font-bold text-[26px]">${price}</h2>
                     </div>
                     <div>
-                        <Link to={`/cars/${carInfo?._id? carInfo._id : ""}`}><button className="button-primary">Details</button></Link>
+                        <Link to={`/cars/${carInfo?._id? carInfo._id : ""}`}><button className="button-primary">Rent Now</button></Link>
                     </div>
                 </div>
             </div>

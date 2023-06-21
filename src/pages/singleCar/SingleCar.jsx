@@ -73,7 +73,7 @@ const SingleCar = () => {
                                 <h4 className="text-[18px] text-[#727272]">Daily rate</h4>
                                 <h2 className="text-[60px] text-[#3F4254] title-font font-semibold">${carInfo?.price ? carInfo.price : 0}</h2>
                             </div>
-                            <button className="w-full button-primary">Rent Now</button>
+                            <button className="w-full button-primary">Confirm Order</button>
                         </div>
                     </div>
                 </div>
