@@ -16,9 +16,9 @@ const Cars = () => {
     }, []);
 
     return (
-        <section className="mt-6 mb-20">
+        <section className="mb-20">
             <CarsTitleParallax />
-            <div className="cars-page mt-2">
+            <div className="cars-page mt-12">
                 {/* Sidebar */}
                 <div className="p-4 flex flex-col gap-5">
                     {/* Vehicle Types */}

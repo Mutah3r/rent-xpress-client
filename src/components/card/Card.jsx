@@ -1,4 +1,5 @@
 import { FaBriefcase, FaUser, FaCarAlt, FaCarSide } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Card = ({ carInfo }) => {
     const { title, price, specifications, images } = carInfo;
@@ -27,7 +28,7 @@ const Card = ({ carInfo }) => {
                         <h2 className="font-bold text-[26px]">${price}</h2>
                     </div>
                     <div>
-                        <button className="button-primary">Rent Now</button>
+                        <Link to={`/cars/${carInfo?._id? carInfo._id : ""}`}><button className="button-primary">Details</button></Link>
                     </div>
                 </div>
             </div>
