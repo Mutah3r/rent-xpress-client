@@ -1,13 +1,23 @@
 import { FaRoad, FaTaxi } from "react-icons/fa";
 import { BsTrophyFill } from "react-icons/bs";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const OurServices = () => {
+    useEffect(() => {
+        Aos.init({
+            anchorPlacement: "top-center",
+            duration: 500,
+        });
+    }, []);
+    
     return (
-        <section className="flex flex-col lg:flex-row gap-8 lg:gap-4 p-4 my-12 max-w-[1200px] mx-auto">
-            <div>
+        <section className="overflow-hidden flex flex-col lg:flex-row gap-8 lg:gap-4 p-4 my-12 max-w-[1200px] mx-auto">
+            <div data-aos="fade-left">
                 <h1 className="text-center lg:text-left text-[42px] title-text font-semibold text-[#3F4254]">Explore the world with comfortable car</h1>
             </div>
-            <div className="flex flex-col sm:flex-row gap-6 text-center">
+            <div data-aos="fade-left" data-aos-delay="150" className="flex flex-col sm:flex-row gap-6 text-center">
                 <div>
                     <div className="bg-[#78CA5C] text-white text-[32px] p-6 inline-block rounded-lg">
                         <BsTrophyFill />

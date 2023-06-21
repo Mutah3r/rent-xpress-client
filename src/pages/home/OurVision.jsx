@@ -1,7 +1,17 @@
 import { useState } from 'react';
-import happyClientImg from '../../assets/images/happy-client.jpg'
+import happyClientImg from '../../assets/images/happy-client.jpg';
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const OurVision = () => {
+    useEffect(() => {
+        Aos.init({
+            anchorPlacement: "top-center",
+            duration: 500,
+        });
+    }, []);
+
     const [selectedTab, setSelectedTab] = useState("luxury");
     const luxuryDescription = "We offer a meticulously curated collection of the most sought-after luxury vehicles on the market. Whether you prefer the sporty allure of a high-performance sports car, the sophistication of a sleek and luxurious sedan, or the versatility of a premium SUV, we have the perfect car to match your discerning taste.";
     const comfortDescription = "We prioritize your comfort and convenience throughout your journey. We understand that a comfortable ride can make a world of difference, whether you're embarking on a business trip or enjoying a leisurely vacation. That's why we offer a wide range of well-maintained, comfortable cars that cater to your specific needs.";
@@ -25,7 +35,7 @@ const OurVision = () => {
                     <button onClick={() => setSelectedTab('prestige')} className={`transition delay-100 px-5 py-3 uppercase rounded-md text-[12px] ${selectedTab === 'prestige' ? "text-white bg-[#78CA5C] drop-shadow-lg" : ""}`}>Prestige</button>
                 </div>
 
-                <p className="text-[#727272] text-center lg:text-left">{getTabText()}</p>
+                <p data-aos="fade-up" className="text-[#727272] text-center lg:text-left">{getTabText()}</p>
             </div>
         </section>
 
