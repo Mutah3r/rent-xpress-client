@@ -40,96 +40,18 @@ const SingleCar = () => {
                             <div className="overflow-x-auto">
                                 <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
                                     <tbody className="divide-y divide-gray-200">
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Body
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.body ? carInfo?.specifications?.body : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Seat
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.seats ? carInfo?.specifications?.seats : ""} seats</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Door
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.doors ? carInfo?.specifications?.doors : ""} doors</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Luggage
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.luggage ? carInfo?.specifications?.luggage : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Fuel Type
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.fuelType ? carInfo?.specifications?.fuelType : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Engine
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.engine ? carInfo?.specifications?.engine : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Year
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.year ? carInfo?.specifications?.year : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Mileage
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.mileage ? carInfo?.specifications?.mileage : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Transmission
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.transmission ? carInfo?.specifications?.transmission : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Drive
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.drive ? carInfo?.specifications?.drive : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Fuel Economy
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.fuelEconomy ? carInfo?.specifications?.fuelEconomy : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Exterior Color
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.exteriorColor ? carInfo?.specifications?.exteriorColor : ""}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
-                                                Interior Color
-                                            </td>
-                                            <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{carInfo?.specifications?.interiorColor ? carInfo?.specifications?.interiorColor : ""}</td>
-                                        </tr>
+                                        {carInfo.specifications &&
+                                            Object.entries(carInfo.specifications).map(([k, v]) => {
+                                                return (
+                                                    <tr key={k}>
+                                                        <td className="whitespace-nowrap px-4 py-2 font-medium text-[15px] text-[#727272]">
+                                                            {k}
+                                                        </td>
+                                                        <td className="whitespace-nowrap px-4 py-2 font-semibold text-[#3F4254] text-[15px]">{v}</td>
+                                                    </tr>
+                                                )
+                                            })
+                                        }
                                     </tbody>
                                 </table>
                             </div>
