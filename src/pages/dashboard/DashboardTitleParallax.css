@@ -1,0 +1,8 @@
+.dashboard-title-parallax {
+    background: url("https://images.unsplash.com/photo-1597386601945-8980df52c3dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}

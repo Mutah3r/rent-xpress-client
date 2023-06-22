@@ -19,6 +19,22 @@
   grid-template-columns: 1fr 3fr;
 }
 
+.sidebar-link {
+  @apply px-3 py-1 text-[#333333] rounded-lg flex items-center gap-3;
+}
+
+.sidebar-link svg {
+  @apply text-primary;
+}
+
+.sidebar-active-link {
+  @apply bg-primary text-white;
+}
+
+.sidebar-active-link svg {
+  @apply text-white;
+}
+
 @media only screen and (max-width: 900px) {
   .cars-page {
     background-color: white;
