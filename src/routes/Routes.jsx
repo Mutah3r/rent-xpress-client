@@ -3,6 +3,7 @@ import Main from "../layouts/Main";
 import Home from "../pages/home/Home";
 import Cars from "../pages/cars/Cars";
 import SingleCar from "../pages/singleCar/SingleCar";
+import AboutUs from "../pages/about/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: '/cars/:carId',
                 element: <SingleCar />
+            },
+            {
+                path: '/about',
+                element: <AboutUs />
             }
         ]
     }
