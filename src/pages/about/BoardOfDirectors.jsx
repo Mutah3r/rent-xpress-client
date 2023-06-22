@@ -55,8 +55,8 @@ const BoardOfDirectors = () => {
                         </div>
                     </div>
                     <div className="text-center text-white my-4 px-2">
-                        <h2 className="title-font text-[20px] font-semibold">Fynley Wilkinson</h2>
-                        <h4 className="text-[14px]">Chief Creative Officer</h4>
+                        <h2 className="title-font text-[20px] font-semibold">Peter Welsh</h2>
+                        <h4 className="text-[14px]">Chief Technology Officer</h4>
                     </div>
                 </div>
                 {/* Chief Executive Officer */}
@@ -79,8 +79,8 @@ const BoardOfDirectors = () => {
                         </div>
                     </div>
                     <div className="text-center text-white my-4 px-2">
-                        <h2 className="title-font text-[20px] font-semibold">Fynley Wilkinson</h2>
-                        <h4 className="text-[14px]">Chief Creative Officer</h4>
+                        <h2 className="title-font text-[20px] font-semibold">John Shepard</h2>
+                        <h4 className="text-[14px]">Chief Executive Officer</h4>
                     </div>
                 </div>
                 {/* Director of Finance */}
@@ -103,8 +103,8 @@ const BoardOfDirectors = () => {
                         </div>
                     </div>
                     <div className="text-center text-white my-4 px-2">
-                        <h2 className="title-font text-[20px] font-semibold">Fynley Wilkinson</h2>
-                        <h4 className="text-[14px]">Chief Creative Officer</h4>
+                        <h2 className="title-font text-[20px] font-semibold">Mike Dowson</h2>
+                        <h4 className="text-[14px]">Director of Finance</h4>
                     </div>
                 </div>
             </div>
